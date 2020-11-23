@@ -1,14 +1,24 @@
-// React Native Navigation Drawer
-// https://aboutreact.com/react-native-navigation-drawer/
+
 import * as React from 'react';
 import {
   Button,
   View,
   Text,
-  SafeAreaView
+  SafeAreaView,
+  StyleSheet,
+  
+
+  
 } from 'react-native';
 
+
+
+
+
 const SecondPage = ({ navigation }) => {
+ 
+ 
+
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={{ flex: 1, padding: 16 }}>
@@ -58,8 +68,16 @@ const SecondPage = ({ navigation }) => {
           Crafted With ♥ By Javeriya
         </Text>
       </View>
+
+    
+
     </SafeAreaView>
+    
   );
-}
+        }
+       
+      
+       
+
 
 export default SecondPage;

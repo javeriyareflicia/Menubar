@@ -1,5 +1,4 @@
-// React Native Navigation Drawer
-// https://aboutreact.com/react-native-navigation-drawer/
+
 
 import * as React from 'react';
 import {
