@@ -1,61 +1,79 @@
 
-import * as React from 'react';
+
 import {
   Button,
   View,
   Text,
   SafeAreaView,
   StyleSheet,
-  
-
-  
+  Linking,
+  ScrollView,
+ 
 } from 'react-native';
 
 
+import React from 'react';
 
+import { Video } from 'expo-av';
 
 
 const SecondPage = ({ navigation }) => {
  
+  
  
 
+
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <View style={{ flex: 1, padding: 16 }}>
-        <View
-          style={{
-            flex: 1,
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
-          <Text
-            style={{
-              fontSize: 25,
+    
+    <ScrollView> 
+   
+     
+       <View style={styles.container}>
+       <View>
+      <Text  style={{
+             
               textAlign: 'center',
-              color:'blue',
-              marginBottom: 230,
-              fontSize: 18
-            }}>
-           Welcome To The Second Page...!!!
-          </Text>
-          {/* <Button
-            title="Go to First Page"
-            onPress={
-              () => navigation.navigate('FirstPage')
-            }
-          />
-          <Button
-            title="Go to Third Page"
-            onPress={
-              () => navigation.navigate('ThirdPage')
-            }
-          /> */}
-        </View>
-        <Text
+              color:'black',
+              fontSize: 20,
+              marginTop: 50,
+              marginBottom:-50
+              
+
+            }}>Play This Vedio And Enjoy...!!!</Text>
+    </View>
+  <Video
+  source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4' }}
+  rate={1.0}
+  volume={1.0}
+  isMuted={false}
+  resizeMode="cover"
+  shouldPlay
+  isLooping
+ 
+  useNativeControls
+  style={{ width: 300, height: 300, marginTop:100 }}
+/>
+
+<Video
+  source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4' }}
+  rate={1.0}
+  volume={1.0}
+  isMuted={false}
+  resizeMode="cover"
+  shouldPlay
+  isLooping
+ 
+  useNativeControls
+  style={{ width: 300, height: 300, marginTop:100 }}
+/>
+
+<Text
           style={{
             fontSize: 12,
             textAlign: 'center',
-            color: 'blue'
+            color: 'blue',
+            marginTop:10
+        
           }}>
            React Navigation Menu
         </Text>
@@ -65,13 +83,21 @@ const SecondPage = ({ navigation }) => {
             textAlign: 'center',
             color: 'blue'
           }}>
-          Crafted With ♥ By Javeriya
+         Crafted With ♥ By Javeriya
         </Text>
+
       </View>
+      </ScrollView>
+     
+        
+       
+       
+     
+      
 
-    
-
-    </SafeAreaView>
+   
+   
+   
     
   );
         }
@@ -81,3 +107,14 @@ const SecondPage = ({ navigation }) => {
 
 
 export default SecondPage;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+ 
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+ 
+});
