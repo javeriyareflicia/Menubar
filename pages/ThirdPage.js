@@ -28,18 +28,7 @@ const ThirdPage = ({ route, navigation }) => {
             }}>
           Welcome To The Third Page...!!!
           </Text>
-          {/* <Button
-            onPress={
-              () => navigation.navigate('FirstPage')
-            }
-            title="Go to First Page"
-          />
-          <Button
-            onPress={
-              () => navigation.navigate('SecondPage')
-            }
-            title="Go to Second Page"
-          /> */}
+        
         </View>
         <Text
           style={{

@@ -178,18 +178,7 @@ const FirstPage = ({ navigation }) => {
 </ScrollView>
 </ScrollView>
           
-          {/* <Button
-            onPress={
-              () => navigation.navigate('SecondPage')
-            }
-            title="Go to Second Page"
-          />
-          <Button
-            onPress={
-              () => navigation.navigate('ThirdPage')
-            }
-            title="Go to Third Page"
-          /> */}
+         
         </View>
         <Text
           style={{
@@ -238,7 +227,7 @@ const styles = StyleSheet.create({
   },
   openButton: {
     backgroundColor: "black",
-    // borderRadius: 20,
+   
     padding: 10,
     elevation: 2
   },
